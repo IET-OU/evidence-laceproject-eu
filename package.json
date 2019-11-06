@@ -6,10 +6,12 @@
   "homepage": "http://evidence.laceproject.eu/",
   "repository": "https://github.com/IET-OU/evidence-laceproject-eu.git",
   "devDependencies": {
-    "live-server": "^1.2.1"
+    "live-server": "^1.2.1",
+    "replace": "^1.1.1"
   },
   "scripts": {
     "archive": "bash bin/archive.sh",
+    "fix": "node bin/replace.js",
     "start": "live-server --port=9001 --no-browser"
   }
 }
