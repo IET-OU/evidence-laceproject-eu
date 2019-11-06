@@ -21,6 +21,22 @@ replace({
   recursive: true
 });
 
+replace({
+  paths: [ PUBLIC_HTML ],
+  regex: /href="(http:\/\/evidence.laceproject.eu\/)?(contribute|evidence|projects|propositions)\/"/g,
+  replacement: 'href="/$2/"',
+  count: true,
+  recursive: true
+});
+
+replace({
+  paths: [ PUBLIC_HTML ],
+  regex: /"http:\/\/evidence.laceproject.eu(\/.+\/iet-ou-logo-400px.svg)"/g,
+  replacement: '"$1"',
+  count: true,
+  recursive: true
+});
+
 function outputPath (file) {
   return require('path').join(__dirname, '/..', OUTPUT_DIR, file || '');
 }
