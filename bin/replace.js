@@ -31,8 +31,25 @@ replace({
 
 replace({
   paths: [ PUBLIC_HTML ],
+  regex: /href="(http:\/\/evidence.laceproject.eu\/)?(evidence\/by-sector)\/"/g,
+  replacement: 'href="/$2/"',
+  count: true,
+  recursive: true
+});
+
+// Javascript embedded in HTML.
+replace({
+  paths: [ PUBLIC_HTML ],
   regex: /"http:\/\/evidence.laceproject.eu(\/.+\/iet-ou-logo-400px.svg)"/g,
   replacement: '"$1"',
+  count: true,
+  recursive: true
+});
+
+replace({
+  paths: [ PUBLIC_HTML ],
+  regex: /:"http:\\\/\\\/evidence.laceproject.eu\\\/wp-includes\\\/js\\\/wp-emoji-release.min.js\?ver=5.2.4"\}/g,
+  replacement: ':"\/wp-includes\/js\/wp-emoji-release.min.js?ver=5.2.4"}',
   count: true,
   recursive: true
 });

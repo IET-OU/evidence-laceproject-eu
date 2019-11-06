@@ -46,6 +46,7 @@ http://evidence.laceproject.eu/country/gb/
 
 http://evidence.laceproject.eu/propositions/
 http://evidence.laceproject.eu/evidence/
+http://evidence.laceproject.eu/evidence/by-sector/
 http://evidence.laceproject.eu/projects/
 http://evidence.laceproject.eu/contribute/
 
