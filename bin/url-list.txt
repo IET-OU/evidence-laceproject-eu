@@ -44,4 +44,12 @@ http://evidence.laceproject.eu/country/gb/
 # http://evidence.laceproject.eu/author/rebeccaferguson/ - 404;
 # http://evidence.laceproject.eu/author/martyncooper/    - 404;
 
+# Images, JSON map data etc.
+http://evidence.laceproject.eu/wp-content/uploads/2014/05/LACEweblogo-padded.png
+http://evidence.laceproject.eu/wp-content/plugins/wp-iet-generic-plugins/images/lace/lace_evidence-hub-banner.png
+http://evidence.laceproject.eu/wp-content/plugins/wp-iet-generic-plugins/images/iet-ou-logo-400px.svg
+http://evidence.laceproject.eu/wp-content/plugins/wp-evidence-hub/lib/map/data/world-110m.json
+http://evidence.laceproject.eu/wp-content/plugins/wp-evidence-hub/lib/map/data/world-country-names.csv
+http://evidence.laceproject.eu/wp-json/oembed/1.0/embed?url=http%3A%2F%2Fevidence.laceproject.eu%2F
+
 # End.

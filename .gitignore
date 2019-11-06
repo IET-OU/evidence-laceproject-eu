@@ -1,8 +1,23 @@
 
 .DS_Store
 /node_modules
-/evidence.laceproject.eu
-/docs
+/evidence.laceproject.eu*
+# /docs
+*BAK*
 *.log
 *.zip
 package-lock.json
+
+# git restore --staged
+/docs/wp-content/themes/tiny-forge/inc/fonts/Elusive-Icons.eot
+# ...
+/docs/wp-content/themes/tiny-forge/inc/fonts/Elusive-Icons.woff
+/docs/wp-content/themes/tiny-forge/inc/fonts/
+/docs/wp-includes/js/jquery/ui/accordion.min.js@ver=1.11.4
+# ...
+/docs/wp-includes/js/jquery/ui/widget.min.js@ver=1.11.4
+/docs/wp-includes/js/jquery/ui/
+
+/bin/url-list-2.txt
+
+# End.
