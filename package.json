@@ -1,0 +1,13 @@
+{
+  "private": true,
+  "name": "@iet-ou/evidence-laceproject-eu-archive",
+  "description": "An archived, read-only copy of the LACE Evidence Hub and its content | © The Open University (IET).",
+  "repository": "https://github.com/IET-OU/evidence-laceproject-eu.git",
+  "devDependencies": {
+    "live-server": "^1.2.1"
+  },
+  "scripts": {
+    "archive": "bash bin/archive.sh",
+    "start": "live-server --port=9001 --no-browser"
+  }
+}

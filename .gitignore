@@ -1,0 +1,8 @@
+
+.DS_Store
+/node_modules
+/evidence.laceproject.eu
+/docs
+*.log
+*.zip
+package-lock.json
