@@ -1,0 +1,141 @@
+/*!
+  Accessibility: ignore colour / high contrast mode fixes [LACE]+
+  For:  OER/ LACE evidence hub sites (EH).
+
+  @author  Nick Freear, 22 Sep 2015.
+
+  http://webdesign.about.com/od/colorcharts/l/blsystemcolors.htm
+  http://www.sitepoint.com/css-system-styles/
+*/
+
+
+/* Country-map SVG / d3.js
+*/
+
+.ignore-color svg text {
+        fill: WindowText;
+        fill-opacity: 1;
+}
+.ignore-color svg #sandisplay .link {
+        stroke-opacity: 1;
+        stroke: Highlight; /* #999 */
+}
+.ignore-color svg #sandisplay .node text {
+        /*fill: HighlightText;*/
+        fill: WindowText;
+}
+
+.ignore-color #evidence-map > svg {
+       border: 1px solid Highlight;
+}
+.ignore-color #evidence-map > svg #map .country,
+.ignore-color #evidence-map > svg .negative,
+.ignore-color #evidence-map > svg .positive {
+       stroke: Highlight;
+}
+.ignore-color #evidence-map > svg #barchart .negative,
+.ignore-color #evidence-map > svg #barchart .positive {
+       stroke: HighlightText;
+}
+
+.XX.ignore-color svg #barchart .label {
+        font-size: 12px;
+}
+
+
+/* Evidence-map and key (Leaflet.js)
+*/
+.ignore-color .marker-cluster,
+.ignore-color .leaflet-popup-content-wrapper,
+.ignore-color .my-custom-control {
+        border: 1px solid Highlight;
+}
+
+
+/* Geographical report map (hypothesis / proposition pages).
+*/
+.ignore-color #country-vis-map svg g[ clip-path ] path {
+        stroke: Highlight;
+}
+.ignore-color #country-vis-map svg path[ stroke = "#cccccc" ] {
+        stroke: WindowText;
+        stroke-width: 1;
+}
+
+
+/* Generic HTML elements - links, buttons, forms.
+*/
+
+/* Firefox requires "inset" in ignore-color mode for form fields. */
+.ignore-color input, .ignore-color #page select, .ignore-color textarea,
+.ignore-color .google-visualization-controls-stringfilter input {
+        /*border: 1px solid ButtonText;*/
+        border: 2px inset ButtonText;
+        -moz-appearance: textfield;
+        box-shadow: none;
+        /*-moz-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);*/
+}
+
+.ignore-color :focus,
+.ignore-color a:hover,
+.ignore-color input:hover,
+.ignore-color select:hover,
+.ignore-color button:hover,
+.ignore-color textarea:hover,
+.ignore-color [ role = button ]:hover,
+.ignore-color [ role = link ]:hover,
+.ignore-color [ tabindex ]:hover,
+.ignore-control [ class *= button ]:hover,
+.ignore-color .leaflet-control .expander:hover {
+        outline: thin dotted invert;
+}
+
+/*
+  http://diythemes.com/thesis/rtfm/restore-browser-default-style-comment-submit-button/
+  http://w3.org/TR/CSS21/sample.html
+*/
+.ignore-color button,
+.ignore-color [ role = button ],
+.ignore-color [ class *= button ],
+.ignore-color a[ href = '#' ],
+.ignore-color [ type = button ],
+.ignore-color [ type = submit ],
+.ignore-color .leaflet-control .expander,
+.ignore-color #cookie-notice a.button {
+        border: 2px outset ButtonFace;
+        background: ButtonFace;
+        color: ButtonText;
+        x-border-radius: 4px;
+        text-decoration: none;
+}
+
+
+/* Site-specific elements.
+*/
+
+body.ignore-color .main-navigation ul.nav-menu {
+       border: 1px solid HighlightText;
+       border-top: 1px solid HighlightText;
+}
+.ignore-color #cookie-notice,
+.ignore-color a:link.assistive-text {
+        background-color: WindowFrame;
+        color: WindowText;
+        border: 3px groove HighlightText !important; /* ButtonFace */
+}
+.ignore-color #cookie-notice {
+        x-background-color: Highlight !important;
+        font-size: 1.05em;
+        min-width: 99%;
+        right: 0;
+}
+
+.ignore-color.lace-with-banner .site-branding #site-logo {
+        display: none !important;
+}
+.ignore-color.lace-with-banner #site-title-wrapper {
+        display: block !important;
+}
+
+
+/*End*/

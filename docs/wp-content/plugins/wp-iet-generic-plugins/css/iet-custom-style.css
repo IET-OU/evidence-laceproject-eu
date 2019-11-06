@@ -1,0 +1,633 @@
+/* IET_Custom_Style_Plugin.
+*/
+
+
+/* Keyboard accessibility etc. [a11y][Bug: #17]
+*/
+:focus /*, a:hover*/ {
+  outline: 1px dotted #333 !important;
+}
+#site-navigation .assistive-text:focus {
+  width: auto;
+  height: auto;
+  font-size: 1.05em;
+  border-color: #666;
+}
+.lace-assistive-help {
+  position: absolute;
+  top: -1000px;
+  border-radius: 4px;
+  border: 1px solid #bbb;
+  background: #f8f8f8;
+  padding: 8px 5px;
+  text-align: center;
+  font-size: .95em;
+}
+.lace-assistive-help:focus {
+  top: auto;
+  z-index: 10;
+}
+
+
+::-webkit-input-placeholder {
+  color: #888;
+}
+::-moz-placeholder { /* Firefox 19+ */
+  color: #999;
+}
+:-ms-input-placeholder {
+  color: #999;
+}
+
+
+.X-test-site .site-header h1 a {
+  color: orange;
+}
+
+.trickytopic-juxtalearn-net .site-header h1 {
+  padding-left: 0.1em;
+  letter-spacing: 0.12em;
+}
+
+.evidence-laceproject-eu .site-header h1 {
+  letter-spacing: 0.03em;
+}
+
+.evidence-laceproject-eu a:hover,
+.evidence-laceproject-eu a:active,
+.evidence-laceproject-eu .widget-area .widget a:hover,
+.evidence-laceproject-eu .widget-area .widget a:active,
+.evidence-laceproject-eu footer[role="contentinfo"] a:hover,
+.evidence-laceproject-eu #footer-widgets a:hover,
+.evidence-laceproject-eu #footer-widgets a:active,
+.evidence-laceproject-eu #site-generator a:hover {
+  color: #f60;  /**Was: #FC9F00;*/
+}
+
+.entry-header .entry-title {
+  color: #333;
+}
+
+
+.small { font-size: small; }
+.inset {
+  border: 1px solid #ddc;
+  padding: 1em 1em 0 1em;
+  margin: 2em;
+  background: #fefbfe;
+  border-radius: 4px;
+}
+
+
+/* SVG maps, charts and logos.
+*/
+.trickytopic-juxtalearn-net svg #barchart .positive,
+.trickytopic-juxtalearn-net svg #map circle.positive {
+  fill: #32b4e5;
+}
+
+.evidence-laceproject-eu svg #barchart .positive,
+.evidence-laceproject-eu svg #map circle.positive {
+  fill: #43672B;  /* LACE green */
+}
+.evidence-laceproject-eu svg #barchart .negative,
+.evidence-laceproject-eu svg #map circle.negative {
+  fill: #336;  /**Was: #596190  /* LACE blue */
+}
+
+.evidence-laceproject-eu #iet-attribution-logo svg g {
+  fill: #43672B;
+  /*fill: #336;*/
+}
+.trickytopic-juxtalearn-net #iet-attribution-logo svg g {
+  fill: #1daa9e;
+}
+
+
+/* Key for SVG 'country-map' [LACE]
+*/
+.evidence-laceproject-eu .evidence-map-key .positive i,
+.evidence-laceproject-eu .evidence-map-key .negative i {
+  opacity: .65;    /* Was: .6 */
+  display: inline-block;
+  min-width: 22px;
+  width: 1.6em;
+  height: 1.2em;
+  border-radius: 2px;
+  margin-right: 7px;
+}
+.evidence-laceproject-eu .evidence-map-key .positive i {
+  background: #43672B;  /* LACE green */
+}
+.evidence-laceproject-eu .evidence-map-key .negative i{
+  background: #336;  /*Was: #596190*/  /* LACE blue */
+}
+
+
+/* LACE menu link(s).
+*/
+.evidence-laceproject-eu .main-navigation li a {
+  font-size: 1.15em;
+  color: #336;  /**Was: #43672b;*/
+}
+.evidence-laceproject-eu .main-navigation .sub-menu li a {
+  font-size: 1em;
+}
+.nav-lace-hilite .nav-menu > li > a[ href *= 'www.laceproject' ],
+.nav-contrib-hilite .nav-menu > li /*.menu-item-121*/ > a[ href *= 'contribute' ] {
+  text-transform: none; /*uppercase*/
+  background: #fcfcfc;
+  color: #555;
+  border: 1px solid #bbb;
+  border-radius: 3px;
+  line-height: 1.6em;
+  padding: 4px 10px;
+  font-size: 1.05em;
+}
+
+.nav-contrib-hilite .nav-menu > li > a[ href *= 'contribute' ] {
+  text-transform: uppercase;
+  border-color: #336;  /**Was: #43672b;*/
+  background: #336;  /**Was: #43672b;*/
+  color: #fff;
+}
+.nav-contrib-lowline .nav-menu > li > a[ href *= 'contribute' ] {
+  text-transform: uppercase;
+  border-bottom: 7px solid #336;
+}
+.nav-test-hilite .nav-menu > li > a[ href *= '/test' ] {
+  text-transform: none;
+  font-size: small;
+  /*color: red;*/
+}
+.evidence-laceproject-eu .main-navigation li {
+  /*margin: 0 32px 0 0;
+  margin: 0 2.3rem 0 0;*/
+  margin: 0 3.7rem 0 0;
+}
+/*.evidence-laceproject-eu .main-navigation li.menu-item-208 /*last-item*/
+.evidence-laceproject-eu .main-navigation li:last-child {
+  margin: 0;
+}
+@media screen and (min-width: 770px) {
+  .evidence-laceproject-eu .main-navigation ul.nav-menu {
+    border-top: none;
+  }
+}
+.evidence-laceproject-eu .main-navigation.toggled li a,
+.evidence-laceproject-eu body .main-navigation h1 {
+  color: #fff;
+  font-size: 1em;
+}
+
+.evidence-laceproject-eu .search-results .page-title {
+  color: #333;
+}
+.evidence-laceproject-eu .entry-header {
+  margin-bottom: .2rem;  /**Was: 1.7..rem*/
+}
+
+.lace-orange .widget-title {
+  background: #f60;
+  color: #111;
+  display: inline-block;
+  padding: 0 4px;
+}
+
+/* Option to hide Sankey diagram within geo. map [Bug: #10] */
+.lace-map-hide-sankey #evidence-map svg #sandisplay {
+  display: none;
+}
+
+.lace-ragged-right .entry-content {
+  text-align: left;
+}
+
+.lace-propositions li {
+  list-style-type: upper-alpha;
+  line-height: 2em;
+}
+.entry-content ul {
+  margin: 1rem 0;
+}
+
+/*.type-page a[href *= 'page_id=114']:after {
+  content: " (lock) ";
+}*/
+
+a[href] .icon-webfont {
+  font-size: .85em;
+  display: inline-block;
+  padding-left: 4px;
+  text-decoration: none;
+  color: red;
+}
+a[href] .el-icon-user {
+  display: none;
+}
+
+
+/* Shortcode: [tagcloud] */
+.iet-wp-tag-cloud-plugin.x_display_count-after a:after {
+  content: "(" attr( title ) ")";
+  display: inline-block;
+  padding: 0 0.5em;
+  text-decoration: none;
+  color: #222;
+}
+.lace-remove-ev-tags .iet-wp-tag-cloud-plugin a[ href *= 'tag/ev-' ] {
+  display: none;
+}
+
+/* Shortcode: [wp_query] format=richlist */
+.lace-richlist-clip .iet-wp-query-plugin.x_format-richlist a {
+  display: inline-block;
+  max-width: 30em;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+  vertical-align: bottom;
+}
+
+
+/* ===================================================== */
+
+/* JuxtaLearn ClipIt menu link.
+*/
+.trickytopic-juxtalearn-net .main-navigation li {
+  margin: 0 1.7rem 0 0;  /*right: 2.85rem, 2rem*/
+}
+.trickytopic-juxtalearn-net .main-navigation li:last-child {
+  margin: 0;
+}
+/* Option:jxl_menu_clipit_selector */
+.trickytopic-juxtalearn-net .main-navigation ul > .menu-item-type-custom a[href *= clipit] {
+  text-transform: none;  /*uppercase*/
+  color: #32b4e5;  /* Option:jxl_menu_clipit_color */
+  background: #fbfbfb;
+  border: 1px solid #32b4e5; /*#0066cc, #32b4e5, #f7931e*/
+  border-radius: 3px;
+  line-height: 1.6em;
+  padding: 3px 11px;
+  font-weight: bold;
+  font-size: 1.15em;
+}
+.trickytopic-juxtalearn-net .main-navigation ul > .menu-item-type-custom a[href *= clipit]:hover {
+  background: #f6f6f6;
+  border-color: #fc9f00;
+  color: #fc9f00;  /*orange*/
+}
+
+
+/* JuxtaLearn - quiz score visualizations.
+*/
+#jlq-score h2 {
+  font-size: 1.4em;
+  margin: .3em 0;
+}
+#jlq-score table th, #jlq-score table td {
+  font-size: 1.3em;
+  min-width: 7em;
+}
+
+/* ===================================================== */
+
+/* JuxtaLearn print CSS [Bug: #31]
+
+  TODO:  Inject author-name in quiz..
+*/
+
+.trickytopic-juxtalearn-net .entry-title {
+  width: 90%;
+}
+button.jxl-print {
+  background-color: #ddd;
+  color: #333; /*rgb(51, 51, 51)*/
+  font-size: 1em;
+  float: right;
+  padding: 3px 6px;
+  position: relative;
+  top: -2em;
+}
+.wp-admin .jxl-print {
+  background: #eee;
+  position: static;
+  font-size: .6em;
+  cursor: pointer;
+}
+.jxl-print i:before /*, .el-icon-print:before, .dashicons-lightbulb:before*/ {
+  font-family: "Elusive-Icons";
+  content: "\e660";
+  /*font-family: "dashicons";
+  content: "\f339";*/
+  font-style: normal;
+  display: inline-block;
+  padding: 0 4px 0 0;
+}
+.wp-admin .jxl-print i,
+.home.page .jxl-print {
+  display: none;
+}
+
+@media print {
+
+  .entry-content {
+    text-align: left;
+  }
+
+  .entry-content a:link:after,
+  .entry-content a:visited:after {
+    font-size: 0.8em;
+    letter-spacing: -0.05em;
+  }
+
+  button.jxl-print,
+  #adminmenuwrap, #wpadminbar,
+  .message, .updated,
+  .wp-admin .leaflet-container,
+  .wp-admin .add-new-h2,
+  .wp-admin #wpfooter,
+  .wp-admin #screen-options-link-wrap,
+  .wp-admin #ed_toolbar,
+  .wp-admin #wp-content-editor-tools,
+  .wp-admin a.button,
+  #jlq-links-recent-switch {
+    display: none;
+  }
+
+  .wp-admin #wpcontent {
+    margin-left: 0;
+  }
+
+  .wp-admin .wp-editor-area {
+    height: 18em !important;
+    margin-top: 1em !important;
+  }
+
+  .wp-admin .wp-editor-wrap {
+    padding: 0 !important;
+    margin: 1em 0;
+    position: static;
+  }
+
+  .wp-admin .postbox {
+    page-break-inside: avoid;
+  }
+
+  .wp-admin.js .postbox.closed .inside {
+    display: block;
+  }
+}
+
+
+/* Slick Quiz print CSS [JuxtaLearn]
+*/
+@media print {
+
+  .slickQuizWrapper .questions li.question {
+    display: block;
+  }
+
+  .slickQuizWrapper a.button,
+  .slickQuizWrapper .questionCount {
+    display: none !important;
+  }
+}
+
+
+/* Cookie Notice plugin print CSS [LACE]+ [Bug: #3]
+*/
+@media print {
+
+  body > div#cookie-notice[class] {
+    display: none !important;
+  }
+}
+
+
+/* Error page [LACE]+ [Bug: #4]
+*/
+body .not-found .entry-header {
+  margin: .8em 0 2em;
+}
+.not-found button[ onclick ^= history ] {
+  font-size: 1.2em;
+  padding: 4px 15px;
+  margin: .8em 0;
+}
+.search-no-results button[ onclick ^= history ] {
+  display: none;
+}
+
+
+/* Facetious search widget [LACE] [Bug: #2]
+*/
+.evidence-laceproject-eu .facetious_post_type [value=post],
+.evidence-laceproject-eu .facetious_post_type [value=page],
+.evidence-laceproject-eu .facetious_post_type [value=attachment],
+.evidence-laceproject-eu .facetious_post_type [value=hypothesis],
+.evidence-laceproject-eu .facetious_post_type [value=policy],
+.evidence-laceproject-eu .facetious_post_type [value=suggestion],
+.evidence-laceproject-eu .facetious_post_type [value=location] {
+  display: none;
+}
+
+
+.XX-evidence-laceproject-eu .widget_facetious_widget .widget-title {
+  display: none;
+}
+.evidence-laceproject-eu .widget_facetious_widget .facetious_search label:before,
+.evidence-laceproject-eu .widget_facetious_widget .facetious_submit_button:before {
+  font: 1.1em 'Elusive-Icons';
+  content: "\e643";  /* .el-icon-search */
+  display: inline-block;
+  margin-right: 4px;
+}
+.evidence-laceproject-eu .widget_facetious_widget .facetious_submit_button {
+  font-size: 1.1em;
+}
+.evidence-laceproject-eu .widget_facetious_widget {
+  margin-bottom: 2rem;  /** Was: 1.714..rem */
+}
+
+.facetious_form .facetious_author {
+  display: none;
+}
+.evidence-laceproject-eu .logged-in .facetious_form .facetious_author {
+  display: block;
+}
+
+
+
+/* Text hover WP plugin/ qTip style [LACE] [Bug: #5]
+*/
+body /*text-hover*/ .qtip.qtip-default {
+  font-size: .95em;
+  line-height: 1.25em;
+  border: 1px solid #cca;
+  border-radius: 4px;
+  padding: 5px 0;
+  background-color: #fefbfe;
+  color: #222;
+}
+.widget-area acronym, footer acronym {
+  border-bottom: 1px dotted #666;
+  cursor: help;
+}
+
+
+/* Information/ warning/ off-line/ maintenance message [LACE]+
+*/
+.widget-area .widget .jxl-message p {
+  color: #e60; /*#c60*/ font-size: 1.1em; margin: .8em 0; line-height: 1.4em;
+}
+.widget-area .widget .jxl-message.error p {
+  color: red;
+}
+.jxl-message {
+  border: 1px solid #cca; padding: 0 8px; background: #fefbfe; border-radius: 4px;
+}
+
+
+.evidence-laceproject-eu .leaflet-control .eh_evidence_hub_type {
+  display: none;
+}
+
+
+/* Evidence map icon [LACE]
+*/
+.leaflet-right .lace-map-icon {
+  display: none;
+}
+.leaflet-left .lace-map-icon {
+  display: block;
+  position: absolute;
+  top: -44px; /*-52px*/
+  left: 0; /*9px*/
+  padding: 2px 3px 0;
+  background: #fbfbfb;
+  border: 1px solid #e8e8e8;
+  border-radius: 0 3px 0 0;
+  pointer-events: auto;
+}
+
+
+/* CleanPrint [LACE]
+*/
+@media print {
+  .lace-cleanprint-buttons {
+    display: none;
+  }
+}
+.lace-cleanprint-diagram-warn {
+  display: none;
+}
+.lace-cleanprint-buttons {
+  display: inline-block;
+  float: right;
+}
+.lace-cleanprint-buttons button {
+  /*font-size: medium;*/
+  padding: 3px 13px;
+}
+h1 .lace-cleanprint-buttons button {
+  font-size: .55em;
+}
+.lace-cleanprint-qtip img {
+  display: block;
+}
+
+
+/* LACE banner [Bug: #10]
+*/
+.lace-with-banner #site-logo {
+  float: none !important;
+  min-height: 105px;
+  text-align: left;
+  width: 100%;
+  margin: 0;
+}
+.lace-with-banner #site-logo a {
+  position: relative;
+  display: block;
+  width: 100%;
+}
+.lace-with-banner #site-logo img {
+  position: absolute;
+  display: inline-block;
+}
+.lace-with-banner #site-logo img.lace-bnr.left {
+  left: 0;
+  z-index: 100;
+}
+.lace-with-banner #site-logo img.lace-bnr.right {
+  right: 0;
+}
+.lace-with-banner img#site-logo-image {
+  display: none;
+}
+@media screen and (min-width: 770px) {
+  .lace-with-banner #site-title-wrapper {
+    display: none;
+  }
+}
+
+
+/* Increase button colour contrast [a11y] */
+.lace-cleanprint-buttons button, .map-controls button {
+  background: #f4f4f4;
+  color: #111;
+  font-size: .9em;
+}
+.lace-cleanprint-buttons button:hover, .map-controls button:hover,
+.lace-cleanprint-buttons button:focus, .map-controls button:focus {
+  background: #ebebeb;
+}
+.map-controls button {
+  margin: 8px 0;
+}
+.map-controls button i {
+  color: #06c;
+}
+
+
+/* Reset login links etc. to look like links [a11y] */
+.theme-tiny-forge #site-admin-link a:link,
+.theme-tiny-forge #site-admin-link a:visited {
+  border: none;
+  background: none;
+  x-border-bottom: 1px solid #06c;
+  text-decoration: underline;
+  color: #06c;
+  font-size: 1.1em;
+}
+.evidence-laceproject-eu .theme-tiny-forge #site-admin-link a:hover,
+.evidence-laceproject-eu .theme-tiny-forge #site-admin-link a:focus,
+.evidence-laceproject-eu .theme-tiny-forge #site-admin-link a:active {
+  color: #f60;
+}
+.theme-tiny-forge #site-admin-link a:hover,
+.theme-tiny-forge #site-admin-link a:focus,
+.theme-tiny-forge #site-admin-link a:active {
+  background-color: #f2f2f2;
+}
+
+
+.entry-content iframe {
+  border: none;
+  border-radius: 4px;
+  overflow: hidden;  /* ?? */
+}
+.evidence-laceproject-eu #content iframe[ src *= 'docs.google.com/form' ] {
+  border-radius: 10px;
+  width: 100%;
+  /*min-width: 625px; height: 2140px;*/
+  min-width: 695px;  /* 756px */
+  height: 2040px;
+}
+.evidence-laceproject-eu[ data-ua *= Firefox ] #content iframe[ src *= 'google.com/form' ] {
+  height: 2180px;
+}
+
+
+/*End. */
