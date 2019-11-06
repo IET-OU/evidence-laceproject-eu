@@ -12,6 +12,7 @@
   "scripts": {
     "archive": "bash bin/archive.sh",
     "fix": "node bin/replace.js",
-    "start": "live-server --port=9001 --no-browser"
+    "start": "node bin/archive-server.js",
+    "X-start": "live-server --port=9001 --no-browser"
   }
 }

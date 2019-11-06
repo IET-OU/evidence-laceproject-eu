@@ -49,7 +49,7 @@ replace({
 replace({
   paths: [ PUBLIC_HTML ],
   regex: /:"http:\\\/\\\/evidence.laceproject.eu\\\/wp-includes\\\/js\\\/wp-emoji-release.min.js\?ver=5.2.4"\}/g,
-  replacement: ':"\/wp-includes\/js\/wp-emoji-release.min.js?ver=5.2.4"}',
+  replacement: ':"\/wp-includes\/js\/wp-emoji-release.min.js@ver=5.2.4"}', // NOT: '?' !!
   count: true,
   recursive: true
 });
