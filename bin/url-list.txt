@@ -43,6 +43,7 @@ http://evidence.laceproject.eu/country/gb/
 # http://evidence.laceproject.eu/author/dougclow/        - 404;
 # http://evidence.laceproject.eu/author/rebeccaferguson/ - 404;
 # http://evidence.laceproject.eu/author/martyncooper/    - 404;
+# http://evidence.laceproject.eu/wp-login.php -- NO !!
 
 http://evidence.laceproject.eu/propositions/
 http://evidence.laceproject.eu/evidence/
@@ -57,6 +58,8 @@ http://evidence.laceproject.eu/wp-content/plugins/wp-iet-generic-plugins/images/
 http://evidence.laceproject.eu/wp-content/plugins/wp-evidence-hub/lib/map/data/world-110m.json
 http://evidence.laceproject.eu/wp-content/plugins/wp-evidence-hub/lib/map/data/world-country-names.csv
 http://evidence.laceproject.eu/wp-json/oembed/1.0/embed?url=http%3A%2F%2Fevidence.laceproject.eu%2F
+
+http://evidence.laceproject.eu/api/hub.get_sankey_data/?country_slug=World
 
 http://evidence.laceproject.eu/wp-includes/js/wp-emoji-release.min.js?ver=5.2.4
 

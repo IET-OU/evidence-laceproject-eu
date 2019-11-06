@@ -1,0 +1,299 @@
+{
+  "status": "ok",
+  "nodes": [
+    {
+      "name": "A: Learning",
+      "url": "http://evidence.laceproject.eu/hypothesis/25/a-learning",
+      "id": 25,
+      "type": "hypothesis"
+    },
+    {
+      "name": "Negative",
+      "url": "http://evidence.laceproject.eu/evidence/polarity/neg",
+      "id": "neg",
+      "type": "polarity",
+      "fill": "#FFE5B4"
+    },
+    {
+      "name": "Cross sector",
+      "url": "http://evidence.laceproject.eu/evidence/sector/cross-sector",
+      "id": "cross-sector",
+      "type": "sector",
+      "fill": ""
+    },
+    {
+      "name": "Informal",
+      "url": "http://evidence.laceproject.eu/evidence/sector/informal",
+      "id": "informal",
+      "type": "sector",
+      "fill": "#A9C94D"
+    },
+    {
+      "name": "Schools",
+      "url": "http://evidence.laceproject.eu/evidence/sector/schools",
+      "id": "schools",
+      "type": "sector",
+      "fill": "#1BADCF"
+    },
+    {
+      "name": "Universities",
+      "url": "http://evidence.laceproject.eu/evidence/sector/universities",
+      "id": "universities",
+      "type": "sector",
+      "fill": "#B544A5"
+    },
+    {
+      "name": "Workplace",
+      "url": "http://evidence.laceproject.eu/evidence/sector/workplace",
+      "id": "workplace",
+      "type": "sector",
+      "fill": "#FD9417"
+    },
+    {
+      "name": "Neutral/mixed",
+      "url": "http://evidence.laceproject.eu/evidence/polarity/neutral",
+      "id": "neutral",
+      "type": "polarity",
+      "fill": ""
+    },
+    {
+      "name": "Positive",
+      "url": "http://evidence.laceproject.eu/evidence/polarity/pos",
+      "id": "pos",
+      "type": "polarity",
+      "fill": "#FBa22C"
+    },
+    {
+      "name": "B: Teaching",
+      "url": "http://evidence.laceproject.eu/hypothesis/26/b-teaching",
+      "id": 26,
+      "type": "hypothesis"
+    },
+    {
+      "name": "C: Uptake",
+      "url": "http://evidence.laceproject.eu/hypothesis/27/c-uptake",
+      "id": 27,
+      "type": "hypothesis"
+    },
+    {
+      "name": "D: Ethics",
+      "url": "http://evidence.laceproject.eu/hypothesis/28/d-ethics",
+      "id": 28,
+      "type": "hypothesis"
+    }
+  ],
+  "links": [
+    {
+      "source": "A: Learning",
+      "target": "Negative",
+      "value": 2
+    },
+    {
+      "source": "Negative",
+      "target": "Schools",
+      "value": 2
+    },
+    {
+      "source": "A: Learning",
+      "target": "Neutral/mixed",
+      "value": 12
+    },
+    {
+      "source": "Neutral/mixed",
+      "target": "Cross sector",
+      "value": 1
+    },
+    {
+      "source": "Neutral/mixed",
+      "target": "Informal",
+      "value": 1
+    },
+    {
+      "source": "Neutral/mixed",
+      "target": "Schools",
+      "value": 3
+    },
+    {
+      "source": "Neutral/mixed",
+      "target": "Universities",
+      "value": 5
+    },
+    {
+      "source": "Neutral/mixed",
+      "target": "Workplace",
+      "value": 2
+    },
+    {
+      "source": "A: Learning",
+      "target": "Positive",
+      "value": 35
+    },
+    {
+      "source": "Positive",
+      "target": "Informal",
+      "value": 3
+    },
+    {
+      "source": "Positive",
+      "target": "Schools",
+      "value": 10
+    },
+    {
+      "source": "Positive",
+      "target": "Universities",
+      "value": 14
+    },
+    {
+      "source": "Positive",
+      "target": "Workplace",
+      "value": 8
+    },
+    {
+      "source": "B: Teaching",
+      "target": "Negative",
+      "value": 1
+    },
+    {
+      "source": "Negative",
+      "target": "Schools",
+      "value": 1
+    },
+    {
+      "source": "B: Teaching",
+      "target": "Neutral/mixed",
+      "value": 12
+    },
+    {
+      "source": "Neutral/mixed",
+      "target": "Cross sector",
+      "value": 1
+    },
+    {
+      "source": "Neutral/mixed",
+      "target": "Schools",
+      "value": 5
+    },
+    {
+      "source": "Neutral/mixed",
+      "target": "Universities",
+      "value": 6
+    },
+    {
+      "source": "B: Teaching",
+      "target": "Positive",
+      "value": 31
+    },
+    {
+      "source": "Positive",
+      "target": "Schools",
+      "value": 7
+    },
+    {
+      "source": "Positive",
+      "target": "Universities",
+      "value": 22
+    },
+    {
+      "source": "Positive",
+      "target": "Workplace",
+      "value": 2
+    },
+    {
+      "source": "C: Uptake",
+      "target": "Negative",
+      "value": 2
+    },
+    {
+      "source": "Negative",
+      "target": "Universities",
+      "value": 2
+    },
+    {
+      "source": "C: Uptake",
+      "target": "Neutral/mixed",
+      "value": 3
+    },
+    {
+      "source": "Neutral/mixed",
+      "target": "Schools",
+      "value": 2
+    },
+    {
+      "source": "Neutral/mixed",
+      "target": "Universities",
+      "value": 1
+    },
+    {
+      "source": "C: Uptake",
+      "target": "Positive",
+      "value": 16
+    },
+    {
+      "source": "Positive",
+      "target": "Cross sector",
+      "value": 3
+    },
+    {
+      "source": "Positive",
+      "target": "Informal",
+      "value": 2
+    },
+    {
+      "source": "Positive",
+      "target": "Schools",
+      "value": 5
+    },
+    {
+      "source": "Positive",
+      "target": "Universities",
+      "value": 6
+    },
+    {
+      "source": "D: Ethics",
+      "target": "Negative",
+      "value": 4
+    },
+    {
+      "source": "Negative",
+      "target": "Cross sector",
+      "value": 1
+    },
+    {
+      "source": "Negative",
+      "target": "Schools",
+      "value": 2
+    },
+    {
+      "source": "Negative",
+      "target": "Universities",
+      "value": 1
+    },
+    {
+      "source": "D: Ethics",
+      "target": "Neutral/mixed",
+      "value": 1
+    },
+    {
+      "source": "Neutral/mixed",
+      "target": "Cross sector",
+      "value": 1
+    },
+    {
+      "source": "D: Ethics",
+      "target": "Positive",
+      "value": 4
+    },
+    {
+      "source": "Positive",
+      "target": "Schools",
+      "value": 1
+    },
+    {
+      "source": "Positive",
+      "target": "Universities",
+      "value": 3
+    }
+  ],
+  "title": "World",
+  "markers": []
+}

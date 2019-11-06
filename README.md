@@ -28,6 +28,7 @@ The site was archived on 5th November 2019, using `wget` (see Issue: #? & tools)
 brew install wget
 npm install
 npm run archive
+npm run fix
 npm start
 ```
 

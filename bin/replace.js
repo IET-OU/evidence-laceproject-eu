@@ -54,6 +54,23 @@ replace({
   recursive: true
 });
 
+// 'http://evidence.laceproject.eu/wp-content/
+replace({
+  paths: [ PUBLIC_HTML ],
+  regex: /'http:\/\/evidence.laceproject.eu\/(wp-content\/.+-hub\/|XX--api.+|wp-admin.*php)'/g,
+  replacement: "'/$1'",
+  count: true,
+  recursive: true
+});
+
+replace({
+  paths: [ PUBLIC_HTML ],
+  regex: /'http:\/\/evidence.laceproject.eu\/api.+',/g,
+  replacement: "'/api/%s/index.json@', // Was: 'http://evidence.laceproject.eu/api/%s/?'",
+  count: true,
+  recursive: true
+});
+
 function outputPath (file) {
   return require('path').join(__dirname, '/..', OUTPUT_DIR, file || '');
 }

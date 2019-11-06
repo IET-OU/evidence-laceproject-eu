@@ -223,9 +223,9 @@ var cnArgs = {"ajaxurl":"http:\/\/evidence.laceproject.eu\/wp-admin\/admin-ajax.
 <div class="lace-map-hide-sankey">        <script>
 		/* <![CDATA[ */
 				var MyAjax = {
-			pluginurl: getPath('http://evidence.laceproject.eu/wp-content/plugins/wp-evidence-hub/'),
-			apiurl: 'http://evidence.laceproject.eu/api/%s/?',
-			ajaxurl: getPath('http://evidence.laceproject.eu/wp-admin/admin-ajax.php'),
+			pluginurl: getPath('/wp-content/plugins/wp-evidence-hub/'),
+			apiurl: '/api/%s/index.json@', // Was: 'http://evidence.laceproject.eu/api/%s/?'
+			ajaxurl: getPath('/wp-admin/admin-ajax.php'),
 			svg_logo:  "images\/LACEweblogo.svg",
 			svg_scale: [0.15,0.15]		};
 		function getPath(url) {
